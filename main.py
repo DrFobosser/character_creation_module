@@ -1,5 +1,28 @@
 from random import randint
 
+class Character:
+    def __init__(self, name) -> None:
+        self.name = name
+
+    def attack(self):
+        return (f'{self.name} нанёс урон противнику равный '
+                f'{...}')
+    
+    def defence(self):
+        return f'{...} блокировал'
+
+    def special(self):
+        return f'{...} применил специальное умение'
+
+class Warrior(Character):
+    ...
+
+class Mage(Character):
+    ...
+
+class Healer(Character):
+    ...
+
 
 def attack(char_name, char_class):
     if char_class == 'warrior':
